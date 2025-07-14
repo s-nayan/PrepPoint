@@ -3,13 +3,13 @@ import { initializeApp, getApp, getApps } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyAtXfR4MTZluVSGnH5qBh8CLAE43XRnjgQ",
-  authDomain: "preppoint-1509.firebaseapp.com",
-  projectId: "preppoint-1509",
-  storageBucket: "preppoint-1509.firebasestorage.app",
-  messagingSenderId: "1013747578392",
-  appId: "1:1013747578392:web:8e323a12bc77d33a09756d",
-  measurementId: "G-XHBLJVL096"
+  apiKey: process.env.CLIENT_APIKEYS,
+  authDomain: process.env.CLIENT_AUTH_DOMAIN,
+  projectId: process.env.CLIENT_PROJECT_ID,
+  storageBucket: process.env.CLIENT_STORAGE_BUCKET,
+  messagingSenderId: process.env.CLIENT_MESSAGING_SENDER_ID,
+  appId: process.env.CLIENT_APP_ID,
+  measurementId: process.env.CLIENT_MEASUREMENT_ID
 };
 
 // Initialize Firebase
